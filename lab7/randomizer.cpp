@@ -1,5 +1,19 @@
 #include "randomizer.h"
 
+double Xm = 0.33;
+
+double kaskad_bifurkaciy() {
+	double Xn = R*Xm*(1 - Xm);
+	Xm = Xn;
+	return Xn;
+}
+
+
+
+
+
+
+
 int f0 = 0, f1 = 0, f2 = 0;
 
 void my_srand() {

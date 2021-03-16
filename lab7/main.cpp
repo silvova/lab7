@@ -9,7 +9,8 @@ int main() {
 		number[x]++;
 	}
 	for (int i = 0; i < MOD; i++) {
-		printf("Number %d repeated %d times\n", i, number[i]);
+		float k = (1.0)*number[i] / N;
+		printf("Frequency of the number %d - %f\n", i, k);
 	}
 	return 0;
 }
